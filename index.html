@@ -1,1 +1,359 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="Portfolio.css">
+<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahsan Kazmi</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<body>
+
+<div id="container_page">
+
+    <div id="top_of_page"></div>
+
+    <ul class="page_navbar">
+        <div id="list_container" class="container">
+
+            <li><a href="#top_of_page" id="navbar_title">Ahsan Kazmi</a></li>
+            <div id="menu_items">
+                <li id="menu_button">
+                    <div class="btn btn-default"> Menu &#9776;</div>
+                </li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </div>
+        </div>
+    </ul>
+
+    <div class="container heading">
+        <div id="top_image">
+            <img src="https://openclipart.org/image/200px/svg_to_png/241115/Minimal-Computer-Screen-Monitor.png&disposition=attachment" alt="Minimal Computer Screen Monitor" title="Minimal Computer Screen Monitor by  qubodup ( https://openclipart.org/user-detail/qubodup )" />
+        </div>
+        <h1> Ahsan Kazmi </h1>
+        <div class="heading_underline"></div>
+        <div id="heading_description">Software Engineer - Front End Engineer</div>
+
+    </div>
+
+    <div>
+
+    </div>
+
+    <div class="container page">
+        <div id="about"></div>
+        <h2>ABOUT</h2>
+        <div class="heading_underline"></div>
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8"><p id="about_p_1">I am a recent graduate from the University of California, Los Angeles (UCLA) with a degree in Chemical and Biomolecular Engineering.
+                However, I did take three computer science courses while at UCLA (CS 31, CS 32, and CS 33).
+                In taking those courses I discovered that I have a passion for computer science and software development.</p>
+                <p id="about_p_2"> I currently have experience with C, C++, and Java, and also have experience developing Android applications using Android Studio.
+                    I am in the process of learning web development, as well, using HTML, Javascript, jQuery, and CSS.
+                    I also plan to pursue a Masters in Computer Science in the future. </p>
+                <p> My resume is linked below.</p></div>
+            <div class="col-xs-2"></div>
+        </div>
+        <div class="btn btn-default resume_btn">View Resume</div>
+
+        <div class="section_underline"></div>
+        <div style="margin-top: -13px; padding-top: 13px;" id="projects"></div>
+        <h2 style="margin-top: 50px;">PROJECTS</h2>
+        <div id="projects_underline" class="heading_underline"></div>
+
+        <div id="project_row_1" class="row">
+            <div class="col-md-4">
+                <div id="project_image_holder_1" class="project_image_holder picture_effects">
+                    <a id="project_1" class="project_image">
+                        <img id="image_1" src="Calculator.png">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="project_image_holder_2" class="project_image_holder picture_effects">
+                    <a id="project_2" class="project_image">
+                        <img id="image_2" src="Simon.png">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="project_image_holder_3" class="project_image_holder picture_effects">
+                    <a id="project_3" class="project_image">
+                        <img id="image_3" src="white.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="project_row_2" class="row">
+            <div class="col-md-4">
+                <div id="project_image_holder_4" class="project_image_holder picture_effects">
+                    <a id="project_4" class="project_image">
+                        <img id="image_4" src="Tic-Tac_Toe.png">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="project_image_holder_5" class="project_image_holder picture_effects">
+                    <a id="project_5" class="project_image">
+                        <img id="image_5" src="Wikipedia_Viewer.png">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="project_image_holder_6" class="project_image_holder picture_effects">
+                    <a id="project_6" class="project_image">
+                        <img id="image_6" src="Pomodoro-Clock.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section_underline"></div>
+        <div style="margin-top: -13px; padding-top: 13px;" id="contact"></div>
+        <h2 style="margin-top: 50px;">CONTACT ME</h2>
+        <div id="contacts_underline" class="heading_underline"></div>
+
+        <div id="contact_form_container">
+            <form method="post" action="https://formspree.io/kazmi.r.ahsan@gmail.com">
+                <input class="well contact_form_field" type="text" placeholder="Name" name="contacter name" required/>
+                <br>
+                <input class="well contact_form_field" type="text" placeholder="Email Address" name="contacter email" required/>
+                <br>
+                <textarea id="contact_form_message" class="well contact_form_field" type="text" placeholder="Message" name="contacter message" required></textarea>
+                <br>
+                <button class="btn btn-default btn-primary" id="send_button" >Send</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="footer" class="container">
+
+            <div class="btn btn-default footer_btn send_email">Send Email</div><br>
+            <div id="footer_resume" class="btn btn-default footer_btn">View Resume</div>
+            <div id="social_media_links">
+                <a class="social_media_img" id="github_image" href="">
+                    <img src="GitHub-Mark-64px.png">
+                </a>
+                <a class="social_media_img" id="linked_in_img" href="">
+                    <img src="In-2C-59px-R.png">
+                </a>
+
+                <a class="social_media_img" id="freecodecamp_image" href="">
+                    <img style="max-width:85px;" src="freecodecamp.svg">
+                </a>
+            </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+<div id="project_description_modal">
+
+</div>
+
+</body>
+<script>
+
+    $(document).ready(function () {
+        var menuOpen = false;
+        $("#menu_button").click(function () {
+
+            if (menuOpen === false){
+                menuOpen = true;
+                // Add the menu options.
+                var html = "";
+
+                html += "<div id='added_options'>";
+                html += "<div style='background-color: white; height: 1px;'></div>"
+                html += '<li style="padding-top: 10px;" class="added_options"><a style="text-decoration: none;" onmouseover="this.style.color=\'white\'" class ="added_options_a-tag" href="#about">ABOUT</a></li>';
+                html += '<li class="added_options"><a style="text-decoration: none;" onmouseover="this.style.color=\'white\'" class ="added_options_a-tag" href="#projects">PROJECTS</a></li>';
+                html += '<li style="padding-bottom: 10px;" class="added_options"><a style="text-decoration: none;" onmouseover="this.style.color=\'white\'" class ="added_options_a-tag"  href="#contact">CONTACT</a></li>';
+                html += "</div>";
+                $(".page_navbar").append(html);
+                $("<style>").text(".added_options { font-size: 14px; padding-top:5px; padding-bottom: 5px; }").appendTo("head");
+                $("<style>").text(".added_options_a-tag:hover { background-color: #888888; }").appendTo("head");
+                $("<style>").text(".added_options_a-tag {padding-top: 10px; padding-bottom: 10px; padding-right: 15px; padding-left: 15px; text-decoration: none; outline: 0; color:white; }").appendTo("head");
+            }
+            else{
+                menuOpen = false;
+                // Remove the menu options
+                $("#added_options").remove();
+            }
+
+        });
+
+        var project_1 = new Object();
+        project_1.link = "http://codepen.io/Ahsan_Kazmi/full/wgGdEL/";
+        project_1.title = "JavaScript Calculator";
+        project_1.description = "This is a basic four function calculator made using HTML, CSS, and JavaScript. The input is a string that is displayed in real time on the " +
+                "screen as it is entered. Once the user wishes to compute the string, it is parsed according to the Shunting Yard Algorithm to create a queue of strings in postfix " +
+                "notation, which can be more easily computed according to the conventional rules on the order of mathematical operations. ";
+        project_1.img = "Calculator.png";
+
+        var project_2 = new Object();
+        project_2.link = "http://codepen.io/Ahsan_Kazmi/full/egzYLV/";
+        project_2.title = "Simon™ Game";
+        project_2.description = "This is a remake of the classic 1980\'s Simon™. It is built using HTML, CSS, and JavaScript. The user is presented with a random sequence each time the game begins " +
+        "and in order to advance to the next count must correctly click the buttons in the sequence they are presented. The game begins with a count of 1 where only one button must be remembered and proceeds " +
+        "to a count of 20, where the sequence of 20 button clicks must be remembered in order to win the game. At each count a new button is added to sequence to be remembered. " +
+        "If the game is played in strict mode, each time the user inputs the incorrect sequence the game restarts from a count of 1 with a new random sequence. ";
+        project_2.img = "Simon.png"
+
+        var project_3 = new Object();
+        project_3.link = "";
+        project_3.title = "Android Scientific Calculator App";
+        project_3.description = "This is a scientific calculator application for Android devices. It is built using Java and XMl. ";
+        project_3.img = "AndroidCalc.png";
+
+        var project_4 = new Object();
+        project_4.link = "http://codepen.io/Ahsan_Kazmi/full/ygOXVb";
+        project_4.title = "Tic-Tac-Toe";
+        project_4.description = "This is a tic-tac-toe game made using HTML, CSS, and JavaScript. ";
+        project_4.img = "Tic-Tac_Toe.png";
+
+        var project_5 = new Object();
+        project_5.link = "http://codepen.io/Ahsan_Kazmi/full/MJyJLG/";
+        project_5.title = "Wikipedia Viewer";
+        project_5.description = "This is a Wikipedia article finder build using HTML, CSS, and JavaScript. A term can be entered in the search box, and the relevant Wikipedia articles matching the " +
+        "search term are displayed below along with a short description. Clicking on the element containing the article and description links the user to the article on Wikipedia. ";
+        project_5.img = "Wikipedia_Viewer.png";
+
+        var project_6 = new Object();
+        project_6.link = "http://codepen.io/Ahsan_Kazmi/full/OWNgNJ/";
+        project_6.title = "Pomodoro Clock";
+        project_6.description = "This is a Pomodoro Clock built using HTML, CSS, and JavaScript. ";
+        project_6.img = "Pomodoro-Clock.png";
+
+        var projectDescriptionModal = document.getElementById("project_description_modal");
+        var mainPage = document.getElementById("container_page");
+        $("#project_image_holder_1").click(function () {
+            projectDescriptionModal.style.display="block";
+            mainPage.style.display="none";
+            var html = "";
+            html += '<a href="#projects" id="close_page" class="close_page_cross">X</a>';
+            html += '<h2 class="h2_modal">'+ project_1.title + '</h2>';
+            html += '<div class="heading_underline_modal"></div>';
+            html += '<div id="description_modal_project_1" class="container picture_effects" style="margin: 0 auto; text-align: center; cursor: pointer; max-width: 550px;"> <img class="img_modal" id="image_1" src=' + project_1.img +'> </div>';
+            html += '<p class="container p_modal"> '+ project_1.description +'To view the project, either, click on the picture above or ' +
+                    '<a target="_blank" href="'+ project_1.link +'">here</a>.</p>';
+            html += '<a href="#projects" style="outline: 0; text-decoration: none;"><div style="width: 70px;" id="close_project_description" class="btn btn-default center-block">Close</div></a>';
+            $("#project_description_modal").html(html);
+        });
+        $("#project_image_holder_2").click(function () {
+            projectDescriptionModal.style.display="block";
+            mainPage.style.display="none";
+            var html = "";
+            html += '<a href="#projects" id="close_page" class="close_page_cross">X</a>';
+            html += '<h2 class="h2_modal">'+ project_2.title +'</h2>';
+            html += '<div class="heading_underline_modal"></div>';
+            html += '<div id="description_modal_project_2" class="container picture_effects" style="margin: 0 auto; text-align: center; cursor: pointer; max-width: 550px;"> <img class="img_modal" id="image_2" src="'+project_2.img+'"> </div>';
+            html += '<p class="container p_modal">' + project_2.description +'To view the project, either, click on the picture above or ' +
+                    '<a target="_blank" href="'+ project_2.link +'">here</a>.</p>';
+            html += '<a href="#projects" style="outline: 0; text-decoration: none;"><div style="width: 70px;" id="close_project_description" class="btn btn-default center-block">Close</div></a>';
+            $("#project_description_modal").html(html);
+        });
+        $("#project_image_holder_3").click(function () {
+            projectDescriptionModal.style.display="block";
+            mainPage.style.display="none";
+            var html = "";
+            html += '<a href="#projects" id="close_page" class="close_page_cross">X</a>';
+            html += '<h2 class="h2_modal">' + project_3.title + '</h2>';
+            html += '<div class="heading_underline_modal"></div>';
+            html += '<div id="description_modal_project_3" class="container picture_effects" style="margin: 0 auto; text-align: center; cursor: pointer; max-width: 550px;"> <img class="img_modal" id="image_3" src="'+project_3.img+'"> </div>';
+            html += '<p class="container p_modal">'+ project_3.description +'To view the project, either, click on the picture above or ' +
+                    '<a target="_blank" href="'+ project_3.link +'">here</a>.</p>';
+            html += '<a href="#projects" style="outline: 0; text-decoration: none;"><div style="width: 70px;" id="close_project_description" class="btn btn-default center-block">Close</div></a>';
+            $("#project_description_modal").html(html);
+        });
+        $("#project_image_holder_4").click(function () {
+            projectDescriptionModal.style.display="block";
+            mainPage.style.display="none";
+            var html = "";
+            html += '<a href="#projects" id="close_page" class="close_page_cross">X</a>';
+            html += '<h2 class="h2_modal">' + project_4.title + '</h2>';
+            html += '<div class="heading_underline_modal"></div>';
+            html += '<div id="description_modal_project_4" class="container picture_effects" style="margin: 0 auto; text-align: center; cursor: pointer; max-width: 550px;"> <img class="img_modal" id="image_4" src="'+ project_4.img +'"> </div>';
+            html += '<p class="container p_modal">' + project_4.description + 'To view the project, either, click on the picture above or ' +
+                    '<a target="_blank" href="'+ project_4.link +'">here</a>.</p>';
+            html += '<a href="#projects" style="outline: 0; text-decoration: none;"><div style="width: 70px;" id="close_project_description" class="btn btn-default center-block">Close</div></a>';
+            $("#project_description_modal").html(html);
+        });
+        $("#project_image_holder_5").click(function () {
+            projectDescriptionModal.style.display="block";
+            mainPage.style.display="none";
+            var html = "";
+            html += '<a href="#projects" id="close_page" class="close_page_cross">X</a>';
+            html += '<h2 class="h2_modal">'+project_5.title+'</h2>';
+            html += '<div class="heading_underline_modal"></div>';
+            html += '<div id="description_modal_project_5" class="container picture_effects" style="margin: 0 auto; text-align: center; cursor: pointer; max-width: 550px;"> <img class="img_modal" id="image_5" src="'+project_5.img+'"> </div>';
+            html += '<p class="container p_modal">'+ project_5.description +'To view the project, either, click on the picture above or ' +
+                    '<a target="_blank" href="'+ project_5.link +'">here</a>.</p>';
+            html += '<a href="#projects" style="outline: 0; text-decoration: none;"><div style="width: 70px;" id="close_project_description" class="btn btn-default center-block">Close</div></a>';
+            $("#project_description_modal").html(html);
+        });
+        $("#project_image_holder_6").click(function () {
+            projectDescriptionModal.style.display="block";
+            mainPage.style.display="none";
+            var html = "";
+            html += '<a href="#projects" id="close_page" class="close_page_cross">X</a>';
+            html += '<h2 class="h2_modal">'+project_6.title+'</h2>';
+            html += '<div class="heading_underline_modal"></div>';
+            html += '<div id="description_modal_project_6" class="container picture_effects" style="margin: 0 auto; text-align: center; cursor: pointer; max-width: 550px;"> <img class="img_modal" id="image_6" src="'+project_6.img+'"> </div>';
+            html += '<p class="container p_modal">'+project_6.description+'To view the project, either, click on the picture above or ' +
+                    '<a target="_blank" href="'+ project_6.link +'">here</a>.</p>';
+            html += '<a href="#projects" style="outline: 0; text-decoration: none;"><div style="width: 70px;" id="close_project_description" class="btn btn-default center-block">Close</div></a>';
+            $("#project_description_modal").html(html);
+        });
+
+
+        // The on click listener for the dynamically added cross at the top left of the project description pages.
+        $(document).on("click", ".close_page_cross", function() {
+            projectDescriptionModal.style.display="none";
+            mainPage.style.display="block";
+        });
+        // The on click listener for the dynamically added close button at the bottom of the project description pages.
+        $(document).on("click", "#close_project_description", function() {
+            projectDescriptionModal.style.display="none";
+            mainPage.style.display="block";
+        });
+        $(document).on("click", "#description_modal_project_1", function() {
+            window.open(project_1.link);
+        });
+        $(document).on("click", "#description_modal_project_2", function() {
+            window.open(project_2.link);
+        });
+        $(document).on("click", "#description_modal_project_3", function() {
+            window.open(project_3.link);
+        });
+        $(document).on("click", "#description_modal_project_4", function() {
+            window.open(project_4.link);
+        });
+        $(document).on("click", "#description_modal_project_5", function() {
+            window.open(project_5.link);
+        });
+        $(document).on("click", "#description_modal_project_6", function() {
+            window.open(project_6.link);
+        });
+
+        // If the e-mail adress is clicked
+        $('.send_email').on('click',function(){
+            window.location.href = "mailto:kazmi.r.ahsan@gmail.com?";
+        });
+
+
+    });
+
+</script>
+</html>
