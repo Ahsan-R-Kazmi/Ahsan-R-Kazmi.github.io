@@ -55,12 +55,12 @@
                 However, I did take three computer science courses while at UCLA (CS 31, CS 32, and CS 33).
                 In taking those courses I discovered that I have a passion for computer science and software development.</p>
                 <p id="about_p_2"> I currently have experience with C, C++, and Java, and also have experience developing Android applications using Android Studio.
-                    I am in the process of learning web development, as well, using HTML, Javascript, jQuery, and CSS.
-                    I also plan to pursue a Masters in Computer Science in the future. </p>
+                    I have also learned web development using HTML, Javascript, jQuery, and CSS through Free Code Camp.
+                    I plan to pursue a Masters in Computer Science in the future. </p>
                 <p> My resume is linked below.</p></div>
             <div class="col-xs-2"></div>
         </div>
-        <div class="btn btn-default resume_btn">View Resume</div>
+        <a target="_blank" href="Resume_CS_web.pdf"><div class="btn btn-default resume_btn">View Resume</div></a>
 
         <div class="section_underline"></div>
         <div style="margin-top: -13px; padding-top: 13px;" id="projects"></div>
@@ -137,16 +137,16 @@
     <div id="footer" class="container">
 
             <div class="btn btn-default footer_btn send_email">Send Email</div><br>
-            <div id="footer_resume" class="btn btn-default footer_btn">View Resume</div>
+            <a target="_blank" href="Resume_CS_web.pdf"><div id="footer_resume" class="btn btn-default footer_btn">View Resume</div></a>
             <div id="social_media_links">
-                <a class="social_media_img" id="github_image" href="">
+                <a class="social_media_img" id="github_image" target="_blank" href="https://github.com/Ahsan-R-Kazmi">
                     <img src="GitHub-Mark-64px.png">
                 </a>
-                <a class="social_media_img" id="linked_in_img" href="">
+                <a class="social_media_img" id="linked_in_img" target="_blank" href="https://www.linkedin.com/in/ahsan-kazmi-06b45b8a">
                     <img src="In-2C-59px-R.png">
                 </a>
 
-                <a class="social_media_img" id="freecodecamp_image" href="">
+                <a class="social_media_img" id="freecodecamp_image" target="_blank" href="https://www.freecodecamp.com/ahsan-r-kazmi">
                     <img style="max-width:85px;" src="freecodecamp.svg">
                 </a>
             </div>
@@ -205,7 +205,7 @@
         var project_2 = new Object();
         project_2.link = "http://codepen.io/Ahsan_Kazmi/full/egzYLV/";
         project_2.title = "Simon™ Game";
-        project_2.description = "This is a remake of the classic 1980\'s Simon™. It is built using HTML, CSS, and JavaScript. The user is presented with a random sequence each time the game begins " +
+        project_2.description = "This is a remake of the classic 1980\'s Simon™ by Ralph H. Baer and Howard J. Morrison. It is built using HTML, CSS, and JavaScript. The user is presented with a random sequence each time the game begins " +
         "and in order to advance to the next count must correctly click the buttons in the sequence they are presented. The game begins with a count of 1 where only one button must be remembered and proceeds " +
         "to a count of 20, where the sequence of 20 button clicks must be remembered in order to win the game. At each count a new button is added to sequence to be remembered. " +
         "If the game is played in strict mode, each time the user inputs the incorrect sequence the game restarts from a count of 1 with a new random sequence. ";
@@ -214,7 +214,9 @@
         var project_3 = new Object();
         project_3.link = "";
         project_3.title = "Android Scientific Calculator App";
-        project_3.description = "This is a scientific calculator application for Android devices. It is built using Java and XMl. ";
+        project_3.description = "This is a scientific calculator application for Android devices. It is built using Java and XMl. The input is a string that is displayed in real time on the " +
+                "screen as it is entered. Once the user wishes to compute the string, it is parsed according to the Shunting Yard Algorithm to create a queue of strings in postfix " +
+                "notation, which can be more easily computed according to the conventional rules on the order of mathematical operations. ";
         project_3.img = "AndroidCalc.png";
 
         var project_4 = new Object();
@@ -298,7 +300,7 @@
             html += '<h2 class="h2_modal">'+project_5.title+'</h2>';
             html += '<div class="heading_underline_modal"></div>';
             html += '<div id="description_modal_project_5" class="container picture_effects" style="margin: 0 auto; text-align: center; cursor: pointer; max-width: 550px;"> <img class="img_modal" id="image_5" src="'+project_5.img+'"> </div>';
-            html += '<p class="container p_modal">'+ project_5.description +'To view the project, either, click on the picture above or ' +
+            html += '<p class="container p_modal">'+ project_5.description +'To view the source code, either, click on the picture above or ' +
                     '<a target="_blank" href="'+ project_5.link +'">here</a>.</p>';
             html += '<a href="#projects" style="outline: 0; text-decoration: none;"><div style="width: 70px;" id="close_project_description" class="btn btn-default center-block">Close</div></a>';
             $("#project_description_modal").html(html);
@@ -351,6 +353,7 @@
         $('.send_email').on('click',function(){
             window.location.href = "mailto:kazmi.r.ahsan@gmail.com?";
         });
+
 
 
     });
