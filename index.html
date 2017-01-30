@@ -71,7 +71,7 @@
             <div class="col-md-4">
                 <div id="project_image_holder_1" class="project_image_holder picture_effects">
                     <a id="project_1" class="project_image">
-                        <img id="image_1" src="Calculator.png">
+                        <img id="image_1" src="alternative_fuel_stations_finder.png">
                     </a>
                 </div>
             </div>
@@ -85,7 +85,7 @@
             <div class="col-md-4">
                 <div id="project_image_holder_3" class="project_image_holder picture_effects">
                     <a id="project_3" class="project_image">
-                        <img id="image_3" src="white.png">
+                        <img id="image_3" src="scientific_calculator.png">
                     </a>
                 </div>
             </div>
@@ -102,14 +102,14 @@
             <div class="col-md-4">
                 <div id="project_image_holder_5" class="project_image_holder picture_effects">
                     <a id="project_5" class="project_image">
-                        <img id="image_5" src="Wikipedia_Viewer.png">
+                        <img id="image_5" src="Pomodoro-Clock.png">
                     </a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div id="project_image_holder_6" class="project_image_holder picture_effects">
                     <a id="project_6" class="project_image">
-                        <img id="image_6" src="Pomodoro-Clock.png">
+                        <img id="image_6" src="Wikipedia_Viewer.png">
                     </a>
                 </div>
             </div>
@@ -151,14 +151,13 @@
                 </a>
             </div>
 
-
     </div>
 
 </div>
 
 
 
-
+ga
 <div id="project_description_modal">
 
 </div>
@@ -195,12 +194,12 @@
         });
 
         var project_1 = new Object();
-        project_1.link = "http://codepen.io/Ahsan_Kazmi/full/wgGdEL/";
-        project_1.title = "JavaScript Calculator";
-        project_1.description = "This is a basic four function calculator made using HTML, CSS, and JavaScript. The input is a string that is displayed in real time on the " +
-                "screen as it is entered. Once the user wishes to compute the string, it is parsed according to the Shunting Yard Algorithm to create a queue of strings in postfix " +
-                "notation, which can be more easily computed according to the conventional rules on the order of mathematical operations. ";
-        project_1.img = "Calculator.png";
+        project_1.link = "";
+        project_1.title = "Alternative Fuel Station Finder";
+        project_1.description = "This is an android application designed to search for alternative fuel stations that provide fuels such as Electric, Hydrogen, Ethanol, and Liquefied Nitrogen Gas (LNG). " +
+                "The search can be conducted by inputting an address or using the user's current location. " +
+                "Upon searching the results and map tabs are populated with the location and information of nearby stations. ";
+        project_1.img = "alternative_fuel_stations_finder.png";
 
         var project_2 = new Object();
         project_2.link = "http://codepen.io/Ahsan_Kazmi/full/egzYLV/";
@@ -212,12 +211,12 @@
         project_2.img = "Simon.png"
 
         var project_3 = new Object();
-        project_3.link = "";
-        project_3.title = "Android Scientific Calculator App";
+        project_3.link = "https://play.google.com/store/apps/details?id=com.akazmi.graphingcalculator";
+        project_3.title = "Scientific Calculator";
         project_3.description = "This is a scientific calculator application for Android devices. It is built using Java and XMl. The input is a string that is displayed in real time on the " +
                 "screen as it is entered. Once the user wishes to compute the string, it is parsed according to the Shunting Yard Algorithm to create a queue of strings in postfix " +
                 "notation, which can be more easily computed according to the conventional rules on the order of mathematical operations. ";
-        project_3.img = "AndroidCalc.png";
+        project_3.img = "scientific_calculator.png";
 
         var project_4 = new Object();
         project_4.link = "http://codepen.io/Ahsan_Kazmi/full/ygOXVb";
@@ -226,17 +225,17 @@
         project_4.img = "Tic-Tac_Toe.png";
 
         var project_5 = new Object();
-        project_5.link = "http://codepen.io/Ahsan_Kazmi/full/MJyJLG/";
-        project_5.title = "Wikipedia Viewer";
-        project_5.description = "This is a Wikipedia article finder build using HTML, CSS, and JavaScript. A term can be entered in the search box, and the relevant Wikipedia articles matching the " +
-        "search term are displayed below along with a short description. Clicking on the element containing the article and description links the user to the article on Wikipedia. ";
-        project_5.img = "Wikipedia_Viewer.png";
+        project_5.link = "http://codepen.io/Ahsan_Kazmi/full/OWNgNJ/";
+        project_5.title = "Pomodoro Clock";
+        project_5.description = "This is a Pomodoro Clock built using HTML, CSS, and JavaScript. ";
+        project_5.img = "Pomodoro-Clock.png";
 
         var project_6 = new Object();
-        project_6.link = "http://codepen.io/Ahsan_Kazmi/full/OWNgNJ/";
-        project_6.title = "Pomodoro Clock";
-        project_6.description = "This is a Pomodoro Clock built using HTML, CSS, and JavaScript. ";
-        project_6.img = "Pomodoro-Clock.png";
+        project_6.link = "http://codepen.io/Ahsan_Kazmi/full/MJyJLG/";
+        project_6.title = "Wikipedia Viewer";
+        project_6.description = "This is a Wikipedia article finder build using HTML, CSS, and JavaScript. A term can be entered in the search box, and the relevant Wikipedia articles matching the " +
+        "search term are displayed below along with a short description. Clicking on the element containing the article and description links the user to the article on Wikipedia. ";
+        project_6.img = "Wikipedia_Viewer.png";
 
         var projectDescriptionModal = document.getElementById("project_description_modal");
         var mainPage = document.getElementById("container_page");
@@ -248,8 +247,8 @@
             html += '<h2 class="h2_modal">'+ project_1.title + '</h2>';
             html += '<div class="heading_underline_modal"></div>';
             html += '<div id="description_modal_project_1" class="container picture_effects" style="margin: 0 auto; text-align: center; cursor: pointer; max-width: 550px;"> <img class="img_modal" id="image_1" src=' + project_1.img +'> </div>';
-            html += '<p class="container p_modal"> '+ project_1.description +'To view the project, either, click on the picture above or ' +
-                    '<a target="_blank" href="'+ project_1.link +'">here</a>.</p>';
+            html += '<p class="container p_modal"> '+ project_1.description +'This project will soon be published to the Google Play Store.' +
+                    '<a target="_blank" href="'+ project_1.link +'"></a></p>';
             html += '<a href="#projects" style="outline: 0; text-decoration: none;"><div style="width: 70px;" id="close_project_description" class="btn btn-default center-block">Close</div></a>';
             $("#project_description_modal").html(html);
         });
